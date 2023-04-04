@@ -11,9 +11,9 @@ package Task01;
 public class Main {
     public static void main(String[] args) {
         Tree ft = new Tree();
-        Person adam = new Person("Adam", 'M', null, null);
+        Person adam = new Person("Adam", 'M');
         ft.append(adam);
-        Person eve = new Person("Eve", 'F', null, null);
+        Person eve = new Person("Eve", 'F');
         ft.append(eve);
         Person cain = new Person("Cain", 'M', eve, adam);
         ft.append(cain);
