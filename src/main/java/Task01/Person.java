@@ -12,13 +12,6 @@ public class Person {
         this.mother = mother;
         this.father = father;
     }
-    public Person(String name, char gender) {
-        // new Person(name, gender, null, null); // [null null] на выходе
-        this.name = name;
-        this.gender = gender;
-        this.mother = null;
-        this.father = null;
-    }
     public String getName() {
         return name;
     }

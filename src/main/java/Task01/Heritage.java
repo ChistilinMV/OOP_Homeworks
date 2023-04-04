@@ -22,7 +22,7 @@ public class Heritage {
     public ArrayList<Person> parents(Person person) {
         ArrayList<Person> result = new ArrayList<>();
         if (person.getFather() == null || person.getMother() == null) {
-            result.add(new Person("-= God Father =-", '0'));
+            result.add(new Person("-= God Father =-", '0', null, null));
         } else{
             result.add(person.mother);
             result.add(person.father);
