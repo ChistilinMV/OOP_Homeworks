@@ -18,7 +18,7 @@ public class Heritage {
         }
         return result;
     }
-
+    //
     public ArrayList<Person> parents(Person person) {
         ArrayList<Person> result = new ArrayList<>();
         if (person.getFather() == null || person.getMother() == null) {

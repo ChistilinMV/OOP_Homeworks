@@ -7,8 +7,9 @@ public class Person {
     Person father;
 
     public Person(String name, char gender, Person mother, Person father) {
-        this.name = name;
-        this.gender = gender;
+        this(name, gender);
+        //this.name = name;
+        //this.gender = gender;
         this.mother = mother;
         this.father = father;
     }
@@ -16,8 +17,8 @@ public class Person {
         // new Person(name, gender, null, null); // [null null] на выходе
         this.name = name;
         this.gender = gender;
-        this.mother = null;
-        this.father = null;
+        //this.mother = null;
+        //this.father = null;
     }
     public String getName() {
         return name;
