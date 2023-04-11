@@ -1,13 +1,17 @@
 package Task05;
 
 public interface Human {
-    char godgen = '0';
-    default void breathe(){
+    char GODGEN = '0';
+    String GODNAME = "-= God Father =-";
+
+    default void breathe() {
         System.out.println("Man start breathing");
     }
-    default void eat(){
+
+    default void eat() {
         System.out.println("Man start eating");
     }
+
     void coition(Human partner);
 
 }
