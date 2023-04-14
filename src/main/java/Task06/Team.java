@@ -1,7 +1,9 @@
 package Task06;
 
 import Task06.Humans.Archer;
+import Task06.Humans.Knight;
 import Task06.Humans.Person;
+import Task06.Humans.Warrior;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -39,4 +41,16 @@ public class Team<T extends Person> implements Iterable<T> {
         }
         return max;
     }
+
+    public int maxArmor() {
+        int max = 0;
+        for (T person : this) {
+            Warrior soldier = (Warrior) person;
+            if (soldier.getArmor() > max) {
+                max = soldier.getArmor();
+            }
+        }
+        return max;
+    }
+
 }
