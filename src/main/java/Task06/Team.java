@@ -53,4 +53,15 @@ public class Team<T extends Person> implements Iterable<T> {
         return max;
     }
 
+    public int minArmor() {
+        int min = this.maxArmor();
+        for (T person : this) {
+            Warrior soldier = (Warrior) person;
+            if (soldier.getArmor() < min) {
+                min = soldier.getArmor();
+            }
+        }
+        return min;
+    }
+
 }

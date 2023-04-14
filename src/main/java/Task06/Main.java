@@ -22,6 +22,7 @@ public class Main {
         knights.addPersons(new Knight("John", 150, new Knife(), new Buckler()))
                 .addPersons(new Knight("Adam", 150, new Knife(), new Hoplon()));
         System.out.println("Max armour in team " + knights.maxArmor());
+        System.out.println("Min armour in team " + knights.minArmor());
         Archer archer1 = new Archer("Robin", 100, new Bow(20), new Buckler());
         Archer archer2 = new Archer("Bobin", 100, new Bow(15), new Hoplon());
         System.out.println(archer1);
